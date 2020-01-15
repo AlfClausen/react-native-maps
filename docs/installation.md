@@ -4,11 +4,6 @@ Install the library from npm:
 
 ```sh
 npm install react-native-maps --save-exact
-```
-
-or 
-
-```sh
 yarn add react-native-maps -E
 ```
 

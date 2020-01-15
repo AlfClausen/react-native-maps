@@ -212,7 +212,6 @@ declare module "react-native-maps" {
     initialCamera?: Camera;
     liteMode?: boolean;
     mapPadding?: EdgePadding;
-    paddingAdjustmentBehavior?: "always" | "automatic" | "never";
     maxDelta?: number;
     minDelta?: number;
     legalLabelInsets?: EdgeInsets;
@@ -438,12 +437,9 @@ declare module "react-native-maps" {
 
   export interface MapUrlTileProps extends ViewProperties {
     urlTemplate: string;
-    minimumZ?: number;
     maximumZ?: number;
     zIndex?: number;
     tileSize?: number;
-    shouldReplaceMapContent?:boolean;
-    flipY?: boolean;
   }
 
   export class UrlTile extends React.Component<MapUrlTileProps, any> {}
